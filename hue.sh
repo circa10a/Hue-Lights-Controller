@@ -4,7 +4,7 @@
 # Possible Light States https://github.com/sqmk/huejay#lights
 
 # Detects Bridge IP automatically
-bridgeIP=$(curl -s https://www.meethue.com/api/nupnp | cut -d: -f3 | tr -d '"}]')
+bridgeIP=$(curl -s https://discovery.meethue.com | cut -d: -f3 | tr -d '"}]')
 
 # REQUIRED - Get your own token, see link at the top
 # Example Token
