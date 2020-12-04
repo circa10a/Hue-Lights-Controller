@@ -15,11 +15,11 @@ getLightsInfo(){
   curl http://$bridgeIP/api/$userToken/lights/
 }
 
-# My Light ID's, yours will differ. Call getLightsInfo()
-lights=(3 4 5)
+# Automatically extract all light id's
+lights=( $(getLightStatus | grep -o '"[0-9]\{1,\}"' | sed 's/"//g') )
 
 getLightStatus(){
-  curl http://$bridgeIP/api/$userToken/lights/$2
+  curl -s http://$bridgeIP/api/$userToken/lights/$2
 }
 
 getAllLightStatus(){
