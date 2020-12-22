@@ -1,4 +1,5 @@
-# hue-lights-controller [![Build Status](https://travis-ci.org/circa10a/Hue-Lights-Controller.svg?branch=master)](https://travis-ci.org/circa10a/Hue-Lights-Controller)
+# hue-lights-controller
+
 Bash Script for playing with Phillips Hue lights
 
 ## But why? There's an app for that.
